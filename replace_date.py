@@ -22,6 +22,16 @@ def replace_date(schedule, old_date, new_date):
         # .replace(old_date, new_date) code inserts the "new_date" into
         # the position where the "old_date" used to exist. 
 
-        print("(schedule[:-p]".format(schedule[:-p]))
+        new_schedule = schedule[:-p]  + schedule[-p:].replace(old_date, new_date)
+
+        return new_schedule
+    return schedule
+
+print(replace_date("Last year’s annual report will be released in March 2023", "2023", "2024")) 
+# Should display "Last year’s annual report will be released in March 2024"
+print(replace_date("In April, the CEO will hold a conference", "April", "May")) 
+# Should display "In April, the CEO will hold a conference"
+print(replace_date("The convention is scheduled for October", "October", "June")) 
+# Should display "The convention is scheduled for June"
 
 
