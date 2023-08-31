@@ -27,3 +27,5 @@ game1_scores = {"Arshi": 3, "Catalina": 7, "Diego": 6}
 # Call the "reset_scores" function with the "game1_scores" dictionary. 
 print(reset_scores(game1_scores))
 # Should print {'Arshi': 0, 'Catalina': 0, 'Diego': 0}
+
+
