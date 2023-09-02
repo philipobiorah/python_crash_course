@@ -11,3 +11,10 @@ class Piglet(Animal):
 
 hamlet = Piglet("Hamlet")
 hamlet.speak()
+
+
+class Cow(Animal):
+    sound = "Moooo"
+
+milky = Cow("Milky White")
+milky.speak()
