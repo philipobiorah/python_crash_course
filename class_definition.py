@@ -1,17 +1,13 @@
 class Apple:
-    color = ""
-    flavour = ""
+    def __init__(self, color, flavor):
+        self.color = color
+        self.flavor = flavor
+    def __str__(self) -> str:
+        return "This apple is {} and its flavor is {}".format(self.color, self.flavor)
+        
 
 
-jonagold = Apple()
 
-jonagold.color = "red"
-jonagold.flavour = "sweet"
-
-
-print(jonagold.color.upper())
-print(jonagold.flavour)
-
-
-golden = Apple()
-golden.color = "Yellow"
+jonagold = Apple("red", "sweet")
+print(jonagold.color)
+print(jonagold)
